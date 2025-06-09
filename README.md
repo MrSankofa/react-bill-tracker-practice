@@ -12,3 +12,6 @@ Second pass
 
 Third pass
 * rely on java to perform CRUD
+
+
+react-app-trial-1 is a good practice repo for context
