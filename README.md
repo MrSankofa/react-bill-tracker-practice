@@ -9,3 +9,6 @@ Goal
 
 Second pass
 * refactor for redux
+
+Third pass
+* rely on java to perform CRUD
