@@ -14,6 +14,63 @@
 13. how you should update the form when click edit, updating state
 14. How to use the new redux slices
 
+CSS
+
+1. Making each label input show up in a row, where the labels are left justified and the width is consistent for all
+
+```html
+<form className="form">
+    <div className="form-row">
+        <label htmlFor="name">Name</label>
+        <input id="name" type="text" placeholder="e.g. DTE"/>
+    </div>
+    <div className="form-row">
+        <label htmlFor="amount">Amount</label>
+        <input id="amount" type="number" placeholder="0.00"/>
+    </div>
+    <div className="form-row">
+        <label htmlFor="dueDate">Due Date</label>
+        <input id="dueDate" type="number" placeholder="7"/>
+    </div>
+    <div className="form-row">
+        <label htmlFor="category">Category</label>
+        <input id="category" type="text" placeholder="e.g. Fixed Monthly Bills"/>
+    </div>
+    <div className="form-row">
+        <label htmlFor="account">Account</label>
+        <input id="account" type="text" placeholder="e.g. Chase"/>
+    </div>
+</form>
+```
+
+```css
+.form {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem; /* spacing between rows */
+  max-width: 400px;
+  margin: 0 auto;
+}
+
+.form-row {
+  display: flex;
+  align-items: center;
+  gap: 1rem; /* spacing between label and input */
+}
+
+.form-row label {
+  width: 100px; /* consistent label width */
+  text-align: left;
+  font-weight: bold;
+}
+
+.form-row input {
+  flex: 1;
+  padding: 0.4rem;
+  font-size: 1rem;
+}
+```
+
 
 Answers
 

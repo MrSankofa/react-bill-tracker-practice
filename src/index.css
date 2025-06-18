@@ -13,6 +13,31 @@
   -moz-osx-font-smoothing: grayscale;
 }
 
+.form {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem; /* spacing between rows */
+  max-width: 400px;
+  margin: 0 auto;
+}
+
+.form-row {
+  display: flex;
+  align-items: center;
+  gap: 1rem; /* spacing between label and input */
+}
+
+.form-row label {
+  width: 100px; /* consistent label width */
+  text-align: left;
+  font-weight: bold;
+}
+
+.form-row input {
+  flex: 1;
+  padding: 0.4rem;
+  font-size: 1rem;
+}
 a {
   font-weight: 500;
   color: #646cff;
