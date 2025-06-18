@@ -31,6 +31,10 @@ function App() {
                 <label htmlFor="account">Account</label>
                 <input id="account" type="text" placeholder="e.g. Chase"/>
             </div>
+
+            <div className="form-row">
+                <input type="submit" value={"Add"}/>
+            </div>
         </form>
         <h3>Bill List</h3>
     </>
